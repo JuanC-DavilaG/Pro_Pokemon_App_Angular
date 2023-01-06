@@ -1,0 +1,14 @@
+mat-grid-tile {
+  margin: 2rem 0rem;
+}
+
+.btns {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  /* display: block; */
+  margin: 1rem;
+}

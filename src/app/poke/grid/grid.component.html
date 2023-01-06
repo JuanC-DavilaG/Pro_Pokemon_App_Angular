@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+<mat-grid-list cols="4">
+  <mat-grid-tile *ngFor="let pokemon of pokeList">
+    <app-card [info]="pokemon"></app-card>
+  </mat-grid-tile>
+  <!-- <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+  <mat-grid-tile>5</mat-grid-tile> -->
+</mat-grid-list>
+
+<div class="btns">
+  <button
+    [disabled]="page == 0"
+    mat-fab
+    color="primary"
+    aria-label="Example icon button with a delete icon"
+    (click)="prevPage()"
+  >
+    <!-- Prev -->
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  <div class="example-button-container">
+    <button
+      mat-fab
+      color="warn"
+      aria-label="Example icon button with a home icon"
+      (click)="nextPage()"
+    >
+      <!-- Next -->
+      <mat-icon> navigate_next</mat-icon>
+    </button>
+  </div>
+</div>
